@@ -26,9 +26,7 @@ try {
 } catch (e) {
     outputError(e, "scrollToTop");
 }
-// <div class="just-display-on-desktop">
-// <button onclick="scrollToTop()" id="scrolltotop" class="just-display-on-desktop" style="transform: rotate(38deg);">&nwarr;</button>
-// </div>
+
 
 
 
@@ -56,14 +54,7 @@ try {
 } catch (e) {
     outputError(e, "RWD");
 }
-//<div class="row" gap="5px" type="space-evenly">
-//<div class="col-2">
-//A
-//</div>
-//<div class="col-8">
-//B
-//</div>
-//</div>
+
 
 
 // ========== Navigation ========== //
@@ -100,32 +91,7 @@ try {
 } catch (e) {
     outputError(e, "navigation");
 }
-//<nav type="sticky" gap="12px" style="height: 60px;">
-//<div class="nav-title">
-//<a href="/">
-//    <h1>Navigation Title</h1>
-//</a>
-//</div>
-//<div class="nav-links">
-//<div class="nav-content">
-//    <a href="/">Link 1</a>
-//    <a href="/">Link 2</a>
-//    <div class="nav-sub-wrap">
-//        <a href="#" class="nav-sub">Have sublink</a>
-//        <div class="nav-sub-links">
-//            <a href="/">Sublink 1</a>
-//            <a href="/">Sublink 2</a>
-//        </div>
-//    </div>
-//    <a href="/">Link 2</a>
-//</div>
-//</div>
-//<div class="nav-button">
-//<button onclick="toggleNav()">
-//    Toggle Nav
-//</button>
-//</div>
-//</nav>
+
 
 
 
@@ -178,13 +144,6 @@ try {
 } catch (e) {
     outputError(e, "modalbox");
 }
-//<button onclick="toggleModal(this)">Modal Box 1</button>
-//       <div class="modal">
-//           <div class="modal-content">
-//               This is the modal box!<br>
-//               This is the modal box!<br>
-//           </div>
-//       </div>
 
 
 
@@ -227,7 +186,7 @@ try {
 } catch (e) {
     outputError(e, "darkmode");
 }
-// <div id="darkmode"></div>
+
 
 
 

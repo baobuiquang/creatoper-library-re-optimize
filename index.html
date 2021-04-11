@@ -11,10 +11,6 @@
     <title>Document</title>
     <meta name="description" content="Put your description here.">
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap"
-        rel="stylesheet">
-
     <link href="./creatoper.css" rel="stylesheet">
 
     <link href="./style.css" rel="stylesheet">
@@ -23,41 +19,65 @@
 <body>
 
     <div class="main">
-        <div class="game-wrap">
-            <div class="section-top">
-                <img id="background-img" src="./assets/bg1.png">
-                <img id="character-img" src="./assets/char1.png">
-                <img id="event-img" src="./assets/img1.png">
-            </div>
-            <div class="section-bot">
-                <div class="dialog-wrap" onclick="userClick()">
-                    <div id="character-name">
-                        ???
-                    </div>
-                    <div id="dialog-text">
-                        ???
-                    </div>
-                    <div id="choice-wrap">
-                        <button id="choice-0" onclick="selectChoice(0)"></button>
-                        <button id="choice-1" onclick="selectChoice(1)"></button>
-                        <button id="choice-2" onclick="selectChoice(2)"></button>
-                    </div>
-                    <img id="triangle-icon" src="./assets/feathericons/triangle.svg">
-                </div>
-                <div class="sub-wrap">
-                    <div class="phone">
-                        <img class="phone-icon" src="./assets/feathericons/smartphone.svg">
-                        <div class="phone-text">
-                            Phone
-                        </div>
-                        <div class="phone-text-fix"></div>
-                    </div>
-                    <div id="note">
 
+        <!-- Scroll to top -->
+        <div class="just-display-on-desktop">
+            <button onclick="scrollToTop()" id="scrolltotop" class="just-display-on-desktop"
+                style="transform: rotate(38deg);">&nwarr;</button>
+        </div>
+
+
+        <nav type="sticky" gap="12px" style="height: 60px;">
+            <div class="nav-title">
+                <a href="/">
+                    <h1>Navigation Title</h1>
+                </a>
+            </div>
+            <div class="nav-links">
+                <div class="nav-content">
+                    <a href="/">Link 1</a>
+                    <a href="/">Link 2</a>
+                    <div class="nav-sub-wrap">
+                        <a href="#" class="nav-sub">Have sublink</a>
+                        <div class="nav-sub-links">
+                            <a href="/">Sublink 1</a>
+                            <a href="/">Sublink 2</a>
+                        </div>
                     </div>
+                    <a href="/">Link 2</a>
                 </div>
+            </div>
+            <div class="nav-button">
+                <button onclick="toggleNav()">
+                    Toggle Nav
+                </button>
+            </div>
+        </nav>
+
+
+        <button onclick="toggleModal(this)">Modal Box 1</button>
+        <div class="modal">
+            <div class="modal-content">
+                This is the modal box!<br>
+                This is the modal box!<br>
             </div>
         </div>
+
+
+        <div id="darkmode"></div>
+
+
+
+        <div class="row" gap="5px" type="start">
+            <div class="col-2">
+                A
+            </div>
+            <div class="col-8">
+                B
+            </div>
+        </div>
+
+
     </div>
 
 
