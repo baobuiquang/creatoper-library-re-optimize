@@ -28,10 +28,12 @@
     --scrolltotop-padding: 20px;
     --scrolltotop-background-color: transparent;
     /* Custom Scroll Bar */
-    --scrollbar-width: 2px;
+    --scrollbar-width: 6px;
     --scrollbar-track-color: transparent;
-    --scrollbar-thumb-color: #ffffff;
-    --scrollbar-thumb-hover-color: #fffb00;
+    --scrollbar-thumb-color: #868686;
+    --scrollbar-thumb-hover-color: #4d4d4d;
+    /* Main */
+    --main-width: 768px;
 }
 
 * {
@@ -155,12 +157,8 @@ body.darkmode {
 
 /* ========== Main Wrap ========== */
 .main {
-    width: 100%;
+    width: min(100%, var(--main-width));
     margin: 0 auto;
-} @media screen and (min-width: 768px) {
-    .main {
-        width: 768px; /* <--- */
-    }
 }
 
 
@@ -432,4 +430,20 @@ p {
     -o-user-select: none;
     user-select: none;
     pointer-events: none;
+}
+
+
+/* ========== Center Div ========== */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center-x {
+    display: flex;
+    justify-content: center;
+}
+.center-y {
+    display: flex;
+    align-items: center;
 }

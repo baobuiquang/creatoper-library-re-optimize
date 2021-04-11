@@ -1,4 +1,4 @@
-var font_size_p = '16px';
+var font_size_p = '116px';
 var font_size_h1 = '16px';
 
 export {
